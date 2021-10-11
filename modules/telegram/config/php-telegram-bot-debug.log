@@ -1,0 +1,1164 @@
+[2021-09-24 12:34:38] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1135701597
+    [title] => Payment with PHP Telegram Bot
+    [description] => A simple invoice to test Telegram Payments
+    [payload] => payment_demo
+    [start_parameter] => payment_demo
+    [provider_token] => 
+    [currency] => EUR
+    [prices] => Array
+        (
+            [0] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Small thing
+                    [amount] => 100
+                    [raw_data] => Array
+                        (
+                            [label] => Small thing
+                            [amount] => 100
+                        )
+
+                    [bot_username] => 
+                )
+
+            [1] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Bigger thing
+                    [amount] => 2000
+                    [raw_data] => Array
+                        (
+                            [label] => Bigger thing
+                            [amount] => 2000
+                        )
+
+                    [bot_username] => 
+                )
+
+            [2] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Huge thing
+                    [amount] => 50000
+                    [raw_data] => Array
+                        (
+                            [label] => Huge thing
+                            [amount] => 50000
+                        )
+
+                    [bot_username] => 
+                )
+
+        )
+
+    [need_shipping_address] => 
+    [is_flexible] => 
+)
+ [] []
+[2021-09-24 12:34:38] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":400,"description":"Bad Request: parameter \"provider_token\" is required"} [] []
+[2021-09-24 12:34:38] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/sendInvoice HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 734
+
+* upload completely sent off: 734 out of 734 bytes
+< HTTP/1.1 400 Bad Request
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 09:34:38 GMT
+< Content-Type: application/json
+< Content-Length: 99
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 16:30:34] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(128): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:30:59] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(126): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:56:39] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Invalid JSON! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:488
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(131): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:56:41] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Invalid JSON! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:488
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(131): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:19:14] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:16] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:19] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:25] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:31] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:34] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:37] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:41] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:43] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 302573586
+    [title] => Payment with PHP Telegram Bot
+    [description] => A simple invoice to test Telegram Payments
+    [payload] => payment_demo
+    [start_parameter] => payment_demo
+    [provider_token] => 
+    [currency] => EUR
+    [prices] => Array
+        (
+            [0] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Small thing
+                    [amount] => 100
+                    [raw_data] => Array
+                        (
+                            [label] => Small thing
+                            [amount] => 100
+                        )
+
+                    [bot_username] => 
+                )
+
+            [1] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Bigger thing
+                    [amount] => 2000
+                    [raw_data] => Array
+                        (
+                            [label] => Bigger thing
+                            [amount] => 2000
+                        )
+
+                    [bot_username] => 
+                )
+
+            [2] => Longman\TelegramBot\Entities\Payments\LabeledPrice Object
+                (
+                    [label] => Huge thing
+                    [amount] => 50000
+                    [raw_data] => Array
+                        (
+                            [label] => Huge thing
+                            [amount] => 50000
+                        )
+
+                    [bot_username] => 
+                )
+
+        )
+
+    [need_shipping_address] => 
+    [is_flexible] => 
+)
+ [] []
+[2021-09-24 17:20:43] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":400,"description":"Bad Request: parameter \"provider_token\" is required"} [] []
+[2021-09-24 17:20:43] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/sendInvoice HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 733
+
+* upload completely sent off: 733 out of 733 bytes
+< HTTP/1.1 400 Bad Request
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:20:43 GMT
+< Content-Type: application/json
+< Content-Length: 99
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:20:43] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:49] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:00] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:05] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:05] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:08] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:08] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:35] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(132): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(132): Longman\TelegramBot\Telegram->runCommands('/start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:59] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(130): Longman\TelegramBot\Telegram->runCommands('/start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:22:58] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:22:58] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:22:58] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:22:58 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x1833140
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:22:58 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:23:15] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:23:15] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:23:15] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:23:15 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x29e20f0
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:23:15 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:23:34] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:23:34] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:23:34] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:23:34 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x15bc0f0
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:23:34 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:24:03] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:24:03] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:24:03] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:03 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x179b0f0
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:03 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:24:10] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:24:10] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:24:10] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:10 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x25c80f0
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:10 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:24:43] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:24:43] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:24:43] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:43 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x2d69140
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:24:43 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:25:22] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:25:22] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:25:22] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:25:22 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x1ba6a80
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:25:22 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:25:32] telegram_bot.DEBUG: Request data:
+Array
+(
+    [chat_id] => 1938690056
+    [text] => Command / not found.. :(
+)
+ [] []
+[2021-09-24 17:25:32] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":403,"description":"Forbidden: bot can't send messages to bots"} [] []
+[2021-09-24 17:25:32] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/getMe HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 3
+
+* upload completely sent off: 3 out of 3 bytes
+< HTTP/1.1 200 OK
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:25:32 GMT
+< Content-Type: application/json
+< Content-Length: 204
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Allow-Methods: GET, POST, OPTIONS
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+* Found bundle for host api.telegram.org: 0x2001a30
+* Re-using existing connection! (#0) with host api.telegram.org
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+> POST /botBOT_TOKEN_REMOVED/sendMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 54
+
+* upload completely sent off: 54 out of 54 bytes
+< HTTP/1.1 403 Forbidden
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:25:32 GMT
+< Content-Type: application/json
+< Content-Length: 88
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:30:02] telegram_bot.DEBUG: Request data:
+Array
+(
+    [0] => asggas
+)
+ [] []
+[2021-09-24 17:30:02] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":400,"description":"Bad Request: parameter \"from_chat_id\" is required"} [] []
+[2021-09-24 17:30:02] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/forwardMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 8
+
+* upload completely sent off: 8 out of 8 bytes
+< HTTP/1.1 400 Bad Request
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:30:02 GMT
+< Content-Type: application/json
+< Content-Length: 97
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-24 17:30:19] telegram_bot.DEBUG: Request data:
+Array
+(
+    [from_chat_id] => 123
+)
+ [] []
+[2021-09-24 17:30:19] telegram_bot.DEBUG: Response data:
+{"ok":false,"error_code":400,"description":"Bad Request: chat not found"} [] []
+[2021-09-24 17:30:19] telegram_bot.DEBUG: Verbose HTTP Request output:
+* About to connect() to api.telegram.org port 443 (#0)
+*   Trying 149.154.167.220...
+* Connected to api.telegram.org (149.154.167.220) port 443 (#0)
+* Initializing NSS with certpath: sql:/etc/pki/nssdb
+*   CAfile: /etc/pki/tls/certs/ca-bundle.crt
+  CApath: none
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=api.telegram.org,OU=Domain Control Validated
+* 	start date: Mar 24 13:48:17 2020 GMT
+* 	expire date: May 23 16:17:38 2022 GMT
+* 	common name: api.telegram.org
+* 	issuer: CN=Go Daddy Secure Certificate Authority - G2,OU=http://certs.godaddy.com/repository/,O="GoDaddy.com, Inc.",L=Scottsdale,ST=Arizona,C=US
+> POST /botBOT_TOKEN_REMOVED/forwardMessage HTTP/1.1
+User-Agent: GuzzleHttp/6.3.3 curl/7.29.0 PHP/7.2.33
+Content-Type: application/x-www-form-urlencoded
+Host: api.telegram.org
+Content-Length: 16
+
+* upload completely sent off: 16 out of 16 bytes
+< HTTP/1.1 400 Bad Request
+< Server: nginx/1.18.0
+< Date: Fri, 24 Sep 2021 14:30:19 GMT
+< Content-Type: application/json
+< Content-Length: 73
+< Connection: keep-alive
+< Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+< Access-Control-Allow-Origin: *
+< Access-Control-Expose-Headers: Content-Length,Content-Type,Date,Server,Connection
+< 
+* Connection #0 to host api.telegram.org left intact
+
+ [] []
+[2021-09-29 15:22:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(156): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []

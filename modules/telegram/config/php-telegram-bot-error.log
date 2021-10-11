@@ -1,0 +1,374 @@
+[2021-09-24 16:30:34] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(128): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:30:59] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(126): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:56:39] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Invalid JSON! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:488
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(131): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 16:56:41] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Invalid JSON! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:488
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(131): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:19:14] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:16] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:19] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:25] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:31] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:34] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:37] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:41] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:43] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:20:49] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:00] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:05] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:05] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:07] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:08] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:08] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(136): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:35] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(132): Longman\TelegramBot\Telegram->runCommands('start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:44] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(132): Longman\TelegramBot\Telegram->runCommands('/start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-24 17:21:59] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: No command(s) provided! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:1000
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(130): Longman\TelegramBot\Telegram->runCommands('/start')
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
+[2021-09-29 15:22:06] telegram_bot.ERROR: Longman\TelegramBot\Exception\TelegramException: Input is empty! in /var/www/intrid/data/www/strongmanpro.ru/vendor/longman/telegram-bot/src/Telegram.php:483
+Stack trace:
+#0 /var/www/intrid/data/www/strongmanpro.ru/frontend/modules/telegram/controllers/ApiController.php(156): Longman\TelegramBot\Telegram->handle()
+#1 [internal function]: frontend\modules\telegram\controllers\ApiController->actionHook()
+#2 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('hook', Array)
+#5 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('telegram/api/ho...', Array)
+#6 /var/www/intrid/data/www/strongmanpro.ru/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /var/www/intrid/data/www/strongmanpro.ru/frontend/web/index.php(37): yii\base\Application->run()
+#8 {main} [] []
