@@ -7,6 +7,11 @@ use common\models\Good;
 use yii\base\BaseObject;
 use yii\base\InvalidConfigException;
 
+/**
+ *
+ * @property-read array $hashes
+ * @property-read array $ids
+ */
 class Cart extends BaseObject
 {
     /**
@@ -14,8 +19,9 @@ class Cart extends BaseObject
      */
     public $storageClass = 'frontend\components\cart\CookieStorage';
 
-    public $cartItemClass;
-
+    /**
+     * @var array $params
+     */
     public $params = [];
 
     /**
@@ -24,7 +30,6 @@ class Cart extends BaseObject
     private $defaultParams = [
         'key' => 'cart',
         'expire' => 604800,
-        'productClass' => 'common\models\Good',
     ];
 
     /**
@@ -37,19 +42,15 @@ class Cart extends BaseObject
      */
     private $storage;
 
-
-
     /**
      * @var int|float $deliveryPrice
      */
     private $deliveryPrice;
 
-
     /**
      * @var int|float $promo
      */
     private $promo;
-
 
     /**
      * @var int|float $scores
@@ -64,36 +65,11 @@ class Cart extends BaseObject
     {
         $this->params = array_merge( $this->defaultParams, $this->params );
 
-        if (!class_exists($this->params['productClass'])) {
-            throw new InvalidConfigException('productClass `' . $this->params['productClass'] . '` not found');
-        }
         if (!class_exists($this->storageClass)) {
             throw new InvalidConfigException('storageClass `' . $this->storageClass . '` not found');
         }
 
-
         $this->storage = new $this->storageClass($this->params);
-    }
-
-    /**
-     * @inheritdoc
-     * Нужно при пересчете в бэкенде, что бы взять актуальные цены из базы, потому что из фронта может подмениться(хацкерами) цена в куках
-     */
-    public function reinitItemsForRecalculateOnBackend()
-    {
-        $this->loadItems();
-
-        foreach (Good::find()->where(['good.id' => $this->getIds()])->joinWith('goodParams')->all() as $good){
-            foreach ($this->getItems() as $item){
-                if ($item->getId() == $good->id){
-                    if (!empty($item->getParam())){
-                        $item->setPrices($good->getPrice($item->getParam()), $good->getOldPrice($item->getParam()));
-                    }else{
-                        $item->setPrices($good->getPrice(), $good->getOldPrice());
-                    }
-                }
-            }
-        }
     }
 
     /**
@@ -103,7 +79,7 @@ class Cart extends BaseObject
      * @param null $modification
      * @return void
      */
-    public function add( int $productId, int $quantity, $modification = null)
+    public function add( int $productId, int $quantity, $modification = null): void
     {
         $this->loadItems();
 
@@ -112,7 +88,7 @@ class Cart extends BaseObject
         if (isset($this->items[$productHash])) {
             $this->plus($productHash, $quantity);
         } else {
-            $this->items[$productHash] = new CartItem($productId, $quantity, $modification);
+            $this->items[$productHash] = new CartItem($productId, $quantity, $modification, $this->params);
             ksort($this->items, SORT_NUMERIC);
             $this->saveItems();
         }
@@ -193,20 +169,6 @@ class Cart extends BaseObject
         return $this->items;
     }
 
-    /**
-     * Returns hashes array all items from the cart
-     * @return array
-     */
-    public function getItemHashes()
-    {
-        $this->loadItems();
-        $items = [];
-        foreach ($this->items as $hashItem => $item) {
-            $items[] = $hashItem;
-        }
-        return $items;
-    }
-
 
     /**
      * Returns hashes array all items from the cart
@@ -218,6 +180,20 @@ class Cart extends BaseObject
         $items = [];
         foreach ($this->items as $item) {
             $items[] = $item->getId();
+        }
+        return $items;
+    }
+
+    /**
+     * Returns hashes array all items from the cart
+     * @return array
+     */
+    public function getHashes(): array
+    {
+        $this->loadItems();
+        $items = [];
+        foreach ($this->items as $hash => $item) {
+            $items[] = $hash;
         }
         return $items;
     }

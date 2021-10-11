@@ -11,7 +11,7 @@ interface StorageInterface
     /**
      * @return CartItem[]
      */
-    public function load();
+    public function load(): array;
     /**
      * @param CartItem[] $items
      */

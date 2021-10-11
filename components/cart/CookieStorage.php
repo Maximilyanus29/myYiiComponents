@@ -20,12 +20,12 @@ class CookieStorage implements StorageInterface
     }
 
     /**
-     * @return CartItem[]|array
+     * @return array
      */
-    public function load()
+    public function load(): array
     {
         if ($cookie = Yii::$app->request->cookies->get($this->params['key'])) {
-            return array_filter(array_map(function (array $row) {
+            return array_filter(array_map(static function (array $row) {
                 if ( isset($row['id'], $row['quantity']) ) {
                     return new CartItem(
                         $row['id'],
@@ -43,11 +43,11 @@ class CookieStorage implements StorageInterface
      * @param CartItem[] $items
      * @return void
      */
-    public function save(array $items)
+    public function save(array $items): void
     {
         Yii::$app->response->cookies->add(new Cookie([
             'name' => $this->params['key'],
-            'value' => Json::encode(array_map(function (CartItem $item) {
+            'value' => Json::encode(array_map(static function (CartItem $item) {
                 return [
                     'id' => $item->getId(),
                     'quantity' => $item->getQuantity(),

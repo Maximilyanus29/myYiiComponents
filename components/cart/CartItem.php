@@ -24,9 +24,10 @@ class CartItem
      */
     private $old_price;
     /**
-     * @var  $param
+     * @var int $param
      */
     private $param;
+
 
     public function __construct($id, $quantity, $param)
     {
